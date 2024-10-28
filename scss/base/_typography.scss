@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+.text__preset {
+    font-family: "Figtree", sans-serif;
+    letter-spacing: 0rem;
+    line-height: 150%;
+    &-1 {
+      font-size: 2.4rem;  
+      font-weight: 800;
+      line-height: 150%;
+    }
+
+    &-2 {
+        font-size: 1.6rem;  
+        font-weight: 500; 
+        line-height: 150%;
+    }
+
+    &-3 {
+        font-size: 1.4rem;  
+        font-weight: 500;
+        line-height: 150%;
+
+        &.bold {
+            font-weight: 800; 
+        }
+    }
+}

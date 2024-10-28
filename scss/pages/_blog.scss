@@ -1,0 +1,79 @@
+@use "../abstracts/variables";
+
+.blog {
+  &__card {
+    width: 38.4rem;
+    height: auto;
+    background-color: variables.$color-white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+    padding: variables.$space-300;
+    display: flex;
+    flex-direction: column;
+    gap: variables.$space-300;
+    box-shadow: 0.8rem 0.8rem 0 variables.$color-gray-950;
+  }
+
+  &__image {
+    height: 20rem;
+    width: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: variables.$space-150;
+  }
+
+  &__title {
+    cursor: pointer;
+    transition: color .2s ease-in-out;
+
+    &:hover {
+      color: variables.$color-yellow;
+    }
+  }
+
+
+  &__category {
+    background-color: variables.$color-yellow;
+    padding: 0.6rem variables.$space-150;
+    border-radius: 0.4rem;
+  }
+
+  &__text {
+    color: variables.$color-gray-500;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: variables.$space-150;
+
+    &-img {
+      width: 3.2rem;
+      height: 3.2rem;
+      overflow: hidden;
+
+      img {
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .blog {
+    &__card {
+      width: 32.7rem;
+    }
+  }
+}
